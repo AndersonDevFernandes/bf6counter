@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap' );
 
-/* Garante que o body ocupa a tela toda */
+/* ==========================================================================
+   ESTILOS GERAIS E DE BASE
+   ========================================================================== */
+
 body, html {
   margin: 0;
   padding: 0;
@@ -8,10 +11,9 @@ body, html {
   font-family: "Oswald", sans-serif;
 }
 
-/* Container principal */
 .container {
   position: relative;
-  height: 100vh; /* tela cheia */
+  height: 100vh;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -19,13 +21,16 @@ body, html {
   justify-content: center;
 }
 
-/* Header no topo */
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10; /* fica acima de tudo */
+  z-index: 10;
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -37,14 +42,13 @@ body, html {
   align-items: center;
   padding: 1rem 2rem;
   max-width: 1200px;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
 .logo {
   color: #ff6600;
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: "Oswald", sans-serif;
 }
 
 .nav-menu {
@@ -55,7 +59,6 @@ body, html {
 .nav-menu a {
   color: white;
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -64,24 +67,26 @@ body, html {
   color: #ff6600;
 }
 
-/* Vídeo em background */
+/* ==========================================================================
+   BACKGROUND E CONTEÚDO PRINCIPAL
+   ========================================================================== */
+
 .background-video {
-  position: fixed; /* Fixa o vídeo na tela */
+  position: fixed;
   right: 0;
   bottom: 0;
-  min-width: 100%; 
+  min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -1; /* Coloca o vídeo atrás de todo o conteúdo */
-  background-size: cover; /* Garante que o vídeo cubra toda a área */
-  overflow: hidden; /* Esconde qualquer parte que exceda */
+  z-index: -1;
+  background-size: cover;
+  overflow: hidden;
 }
 
-/* Conteúdo sobre o vídeo */
 .content {
-  position: absolute;  
-  z-index: 1; /* fica por cima do vídeo */
+  position: absolute;
+  z-index: 1;
   height: 60%;
   width: 100%;
   display: flex;
@@ -90,27 +95,23 @@ body, html {
   align-items: center;
   color: white;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5); /* background mais escuro para melhor legibilidade */
-  backdrop-filter: blur(5px); /* efeito de blur para melhor contraste */
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
   padding: 20px;
-  font-family: "Oswald", sans-serif;
   box-sizing: border-box;
-   
 }
 
 .content h1 {
   font-size: 3rem;
   margin-bottom: 10px;
-  font-family: "Oswald", sans-serif;
 }
 
 .content p {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  font-family: "Oswald", sans-serif;
 }
 
-.site-button {
+.site-button, .trailer-button {
   padding: 10px 20px;
   font-size: 1rem;
   border: 1px #fff solid;
@@ -125,24 +126,9 @@ body, html {
 }
 
 .site-button:hover {
-  
   background: transparent;
   color: #ff6600;
   border-color: #ffffff;
-}
-
-.trailer-button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  border: 1px #fff solid;
-  background: #ff6600;
-  color: rgb(0, 0, 0);
-  cursor: pointer;
-  border-radius: 5px;
-  transition: 0.3s;
-  margin: 2rem;
-  font-family: "Oswald", sans-serif;
-  letter-spacing: 0.2rem;
 }
 
 .trailer-button:hover {
@@ -152,3 +138,100 @@ body, html {
   border-color: #ffffff;
 }
 
+/* ==========================================================================
+   ESTILOS DO CONTADOR (BASE)
+   ========================================================================== */
+
+.countdown-container {
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.time-box {
+  background: #222;
+  color: #ff6600;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 80px;
+  letter-spacing: 0.2rem;
+}
+
+.time-box span {
+  display: block;
+  font-size: 8rem; /* <-- TAMANHO PARA DESKTOP */
+  font-weight: bold;
+  line-height: 1; /* Melhora o alinhamento */
+}
+
+.time-box small {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* ==========================================================================
+   CSS RESPONSIVO (COM AJUSTE FINAL DE FONTE)
+   ========================================================================== */
+
+/* 1. TABLETS E TELAS MENORES (até 1024px) */
+@media (max-width: 1024px) {
+  .content h1 { font-size: 2.5rem; }
+  .countdown-timer { gap: 15px; }
+  .time-box { padding: 15px; min-width: 70px; }
+  .time-box span { font-size: 6rem; } /* Tamanho para tablets maiores */
+}
+
+/* 2. TABLETS RETRATO E CELULARES GRANDES (até 768px) */
+@media (max-width: 768px) {
+  .header-content { flex-direction: column; gap: 1rem; padding: 1rem; }
+  .content { padding: 15px; height: auto; min-height: 60vh; }
+  .content h1 { font-size: 2rem; }
+  .buttons { flex-direction: column; align-items: center; gap: 1rem; width: 100%; }
+  .site-button, .trailer-button { margin: 0; width: 80%; max-width: 300px; box-sizing: border-box; text-align: center; }
+  .trailer-button:hover { transform: none; }
+
+  /* CONTADOR 2x2 */
+  .countdown-timer { flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 320px; margin-left: auto; margin-right: auto; }
+  .time-box { flex-basis: calc(50% - 10px); box-sizing: border-box; padding: 10px; min-width: 120px; border-radius: 8px; }
+  
+  /* --- CORREÇÃO PRINCIPAL AQUI --- */
+  .time-box span { font-size: 3.5rem; } /* Valor reduzido para caber no layout 2x2 */
+  
+  .time-box small { font-size: 0.8rem; }
+}
+
+/* 3. SMARTPHONES (até 480px) */
+@media (max-width: 480px) {
+  .nav-menu { gap: 1.5rem; }
+  .content h1 { font-size: 1.8rem; }
+  
+  /* --- CORREÇÃO PRINCIPAL AQUI --- */
+  .time-box span { font-size: 3rem; } /* Valor ainda menor para telas pequenas */
+  
+  .time-box small { font-size: 0.7rem; }
+}
+
+/* 4. MODO PAISAGEM (LANDSCAPE) */
+@media (max-height: 500px) and (orientation: landscape) {
+  .content { padding: 10px; min-height: 80vh; }
+  .content h1 { font-size: 1.5rem; margin-bottom: 5px; }
+  .countdown-container { margin-top: 10px; }
+
+  /* CONTADOR 4x1 */
+  .countdown-timer { flex-wrap: nowrap; max-width: none; margin-top: 10px; gap: 10px; }
+  .time-box { flex-basis: auto; padding: 5px; }
+  
+  /* --- CORREÇÃO PRINCIPAL AQUI --- */
+  .time-box span { font-size: 2.5rem; } /* Ajustado para a pouca altura do modo paisagem */
+  
+  .time-box small { font-size: 0.6rem; }
+  .buttons { flex-direction: row; margin-top: 10px; }
+  .site-button, .trailer-button { padding: 8px 15px; font-size: 0.8rem; width: auto; }
+}
