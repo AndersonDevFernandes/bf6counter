@@ -2,22 +2,19 @@ import "./globals.css";
 import Countdown from "./components/Countdown/page";
 
 export default function Home() {
-  // 1. Defina a URL do Cloudinary aqui
-  // SUBSTITUA 'seu-cloud-name' PELO SEU NOME DE NUVEM DO CLOUDINARY
-  // SUBSTITUA 'v123456/bg.mp4' PELO PUBLIC ID E NOME DO SEU ARQUIVO NO CLOUDINARY
-  const optimizedVideoUrl = "https://res.cloudinary.com/seu-cloud-name/video/upload/q_auto,f_auto,vc_auto/v123456/bg.mp4";
+  // Use a URL completa e correta do Cloudinary aqui
+  const optimizedVideoUrl = "https://res.cloudinary.com/dldpo6918/video/upload/q_auto,f_auto,vc_auto/v1755881926/bg_ucaxrc.mp4";
 
   return (
     <main className="container">
       
       {/* Vídeo de fundo */}
       <video autoPlay loop muted playsInline className="background-video">
-        {/* 2. Use a variável optimizedVideoUrl no src da tag <source> */}
         <source src={optimizedVideoUrl} type="video/mp4" />
         Seu navegador não suporta vídeo de background.
       </video>
       
-      {/* Header no topo */}
+      {/* Restante do seu código... */}
       <header className="header">
         <div className="header-content">
           <div className="logo">BATTLEFIELD 6</div>
@@ -29,7 +26,6 @@ export default function Home() {
         </div>
       </header>
       
-      {/* Conteúdo por cima */}
       <div className="content">
         <h1>BATTLEFIELD 6</h1>
         <main>

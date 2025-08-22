@@ -1,1 +1,3 @@
 node_modules
+# Cache e builds do Next.js
+.next/

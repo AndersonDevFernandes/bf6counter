@@ -66,13 +66,16 @@ body, html {
 
 /* Vídeo em background */
 .background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* cobre toda a tela sem distorcer */
-  z-index: -1; /* fica atrás do conteúdo */
+  position: fixed; /* Fixa o vídeo na tela */
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1; /* Coloca o vídeo atrás de todo o conteúdo */
+  background-size: cover; /* Garante que o vídeo cubra toda a área */
+  overflow: hidden; /* Esconde qualquer parte que exceda */
 }
 
 /* Conteúdo sobre o vídeo */
