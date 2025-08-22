@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* h1{
+    font-family: "Oswald", sans-serif; 
+} */
+
+.countdown-container {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 50px;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.time-box {
+  background: #222;
+  color: #ff6600;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 80px;
+  letter-spacing: 0.2rem;
+}
+
+.time-box span {
+  display: block;
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+.time-box small {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}

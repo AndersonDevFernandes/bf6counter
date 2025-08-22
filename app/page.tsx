@@ -1,95 +1,39 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import "./globals.css";
+import Countdown from "./components/Countdown/page";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <main className="container">
+      
+      {/* Vídeo de fundo */}
+      <video autoPlay loop muted playsInline className="background-video">
+        <source src="/video/bg.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo de background.
+      </video>
+      
+      {/* Header no topo */}
+      <header className="header">
+        <div className="header-content">
+          <div className="logo">BATTLEFIELD 6</div>
+          <nav className="nav-menu">
+            <a href="#home">HOME</a>
+            <a href="#about">SOBRE</a>
+            <a href="#contact">CONTATO</a>
+          </nav>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </header>
+      
+      {/* Conteúdo por cima */}
+      <div className="content">
+        <h1>BATTLEFIELD 6</h1>
+        <main>
+          <Countdown />
+        </main>
+        <div className="buttons">
+          <a href="https://www.ea.com/pt-br/games/battlefield/battlefield-6" target="_blank"><button className="site-button">SITE</button></a>
+          <a href="https://www.youtube.com/watch?v=fBKcXfOxy7o&t=1s" target="_blank"><button className="trailer-button">TRAILER ▶</button></a>
+        </div>        
+      </div>
+    </main>
   );
 }
