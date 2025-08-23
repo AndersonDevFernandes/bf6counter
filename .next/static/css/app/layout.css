@@ -1,13 +1,14 @@
 /*!*************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/globals.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************/
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap' );
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 
 /* ==========================================================================
    ESTILOS GERAIS E DE BASE
    ========================================================================== */
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -116,7 +117,8 @@ body, html {
   margin-bottom: 20px;
 }
 
-.site-button, .trailer-button {
+.site-button,
+.trailer-button {
   padding: 10px 20px;
   font-size: 1rem;
   border: 1px #fff solid;
@@ -187,31 +189,80 @@ body, html {
 
 /* 1. TABLETS E TELAS MENORES (até 1024px) */
 @media (max-width: 1024px) {
-  .content h1 { font-size: 2.5rem; }
-  .countdown-timer { gap: 15px; }
-  .time-box { padding: 15px; min-width: 70px; }
-  .time-box span { font-size: 6rem; } /* Tamanho para tablets maiores */
+  .content h1 {
+    font-size: 2.5rem;
+  }
+  .countdown-timer {
+    gap: 15px;
+  }
+  .time-box {
+    padding: 15px;
+    min-width: 70px;
+  }
+  .time-box span {
+    font-size: 6rem;
+  } /* Tamanho para tablets maiores */
 }
 
 /* 2. TABLETS RETRATO E CELULARES GRANDES (até 768px) */
 @media (max-width: 768px) {
-  .header-content {  gap: 1rem; padding: 1rem; }
-  .content { padding: 15px; height: auto; min-height: 60vh; }
-  .content h1 { font-size: 2rem; }
-  .buttons { flex-direction: column; align-items: center; gap: 1rem; width: 100%; }
-  .site-button, .trailer-button { margin: 0; width: 80%; max-width: 300px; box-sizing: border-box; text-align: center; }
-  .trailer-button:hover { transform: none; }
+  .header-content {
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .content {
+    padding: 15px;
+    height: auto;
+    min-height: 60vh;
+  }
+  .content h1 {
+    font-size: 2rem;
+  }
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  .site-button,
+  .trailer-button {
+    margin: 0;
+    width: 80%;
+    max-width: 300px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .trailer-button:hover {
+    transform: none;
+  }
 
   /* CONTADOR 2x2 */
-  .countdown-timer { flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 320px; margin-left: auto; margin-right: auto; }
-  .time-box { flex-basis: calc(50% - 10px); box-sizing: border-box; padding: 10px; min-width: 120px; border-radius: 8px; }
-  
-  /* --- CORREÇÃO PRINCIPAL AQUI --- */
-  .time-box span { font-size: 3.5rem; } /* Valor reduzido para caber no layout 2x2 */
-  
-  .time-box small { font-size: 0.8rem; }
+  .countdown-timer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .time-box {
+    flex-basis: calc(50% - 10px);
+    box-sizing: border-box;
+    padding: 10px;
+    min-width: 120px;
+    border-radius: 8px;
+  }
 
-    .buttons {
+  /* --- CORREÇÃO PRINCIPAL AQUI --- */
+  .time-box span {
+    font-size: 3.5rem;
+  } /* Valor reduzido para caber no layout 2x2 */
+
+  .time-box small {
+    font-size: 0.8rem;
+  }
+
+  .buttons {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
@@ -226,14 +277,31 @@ body, html {
 
 /* 3. SMARTPHONES (até 480px) */
 @media (max-width: 480px) {
-  .header-content { flex-direction: column;  gap: 1rem; padding: 1rem; }
-  .nav-menu { gap: 1.5rem; }
-  .content h1 { font-size: 1.8rem; }
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .nav-menu {
+    gap: 1.5rem;
+  }
+  .content h1 {
+    font-size: 1.3rem;
+  }
+
   
+  .title{
+    display: none;
+  }
+
   /* --- CORREÇÃO PRINCIPAL AQUI --- */
-  .time-box span { font-size: 3rem; } /* Valor ainda menor para telas pequenas */
-  
-  .time-box small { font-size: 0.7rem; }
+  .time-box span {
+    font-size: 3rem;
+  } /* Valor ainda menor para telas pequenas */
+
+  .time-box small {
+    font-size: 0.7rem;
+  }
 
   .buttons {
     flex-direction: column;
@@ -250,22 +318,54 @@ body, html {
 
 /* 4. MODO PAISAGEM (LANDSCAPE) */
 @media (max-height: 500px) and (orientation: landscape) {
-  .content { padding: 10px; min-height: 80vh; }
-  .content h1 { font-size: 1.5rem; margin-bottom: 5px; }
-  .countdown-container { margin-top: 10px; }
+  .content {
+    padding: 10px;
+    min-height: 80vh;
+  }
+  .content h1 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  .countdown-container {
+    margin-top: 10px;
+  }
 
-  /* CONTADOR 4x1 */
-  .countdown-timer { flex-wrap: nowrap; max-width: none; margin-top: 10px; gap: 10px; }
-  .time-box { flex-basis: auto; padding: 5px; }
-  
+  .title{
+    display: none;
+  }
+
+   /* CONTADOR 4x1 */
+  .countdown-timer {
+    flex-wrap: nowrap;
+    max-width: none;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .time-box {
+    flex-basis: auto;
+    padding: 5px;
+  }
+
   /* --- CORREÇÃO PRINCIPAL AQUI --- */
-  .time-box span { font-size: 2.5rem; } /* Ajustado para a pouca altura do modo paisagem */
-  
-  .time-box small { font-size: 0.6rem; }
-  .buttons { flex-direction: row; margin-top: 10px; }
-  .site-button, .trailer-button { padding: 8px 15px; font-size: 0.8rem; width: auto; }
+  .time-box span {
+    font-size: 2.5rem;
+  } /* Ajustado para a pouca altura do modo paisagem */
 
-    .buttons {
+  .time-box small {
+    font-size: 0.6rem;
+  }
+  .buttons {
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  .site-button,
+  .trailer-button {
+    padding: 8px 15px;
+    font-size: 0.8rem;
+    width: auto;
+  }
+
+  .buttons {
     flex-direction: column;
     align-items: center;
     gap: 1rem;

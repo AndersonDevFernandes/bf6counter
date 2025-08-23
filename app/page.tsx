@@ -27,7 +27,7 @@ export default function Home() {
       </header>
       
       <div className="content">
-        <h1>BATTLEFIELD 6</h1>
+        <h1 className="title">BATTLEFIELD 6</h1>
         <main>
           <Countdown />
         </main>
