@@ -50,7 +50,7 @@ export default function Countdown() {
 
   return (
     <div className="countdown-container">      
-      <h1>COMTAGEM REGRESSIVA PARA LANÇAMENTO.</h1>
+      <h1>CONTAGEM REGRESSIVA PARA LANÇAMENTO.</h1>
       <div className="countdown-timer">
         <div className="time-box">
           <span>{timeLeft.days}</span>
