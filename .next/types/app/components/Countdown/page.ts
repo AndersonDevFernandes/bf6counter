@@ -1,4 +1,4 @@
-// File: C:\Users\ANDER\Documents\Tudo em programação\aleatórios\bfcounter\app\components\Countdown\page.tsx
+// File: C:\Users\ANDER\Documents\programação\aleatórios\bfcounter\app\components\Countdown\page.tsx
 import * as entry from '../../../../../app/components/Countdown/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

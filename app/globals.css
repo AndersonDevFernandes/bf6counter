@@ -190,7 +190,7 @@ body, html {
 
 /* 2. TABLETS RETRATO E CELULARES GRANDES (até 768px) */
 @media (max-width: 768px) {
-  .header-content { flex-direction: column; gap: 1rem; padding: 1rem; }
+  .header-content {  gap: 1rem; padding: 1rem; }
   .content { padding: 15px; height: auto; min-height: 60vh; }
   .content h1 { font-size: 2rem; }
   .buttons { flex-direction: column; align-items: center; gap: 1rem; width: 100%; }
@@ -205,10 +205,23 @@ body, html {
   .time-box span { font-size: 3.5rem; } /* Valor reduzido para caber no layout 2x2 */
   
   .time-box small { font-size: 0.8rem; }
+
+    .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 60%;
+    margin: 1rem;
+  }
+
+  .site-button {
+    margin: 1rem;
+  }
 }
 
 /* 3. SMARTPHONES (até 480px) */
 @media (max-width: 480px) {
+  .header-content { flex-direction: column;  gap: 1rem; padding: 1rem; }
   .nav-menu { gap: 1.5rem; }
   .content h1 { font-size: 1.8rem; }
   
@@ -216,6 +229,18 @@ body, html {
   .time-box span { font-size: 3rem; } /* Valor ainda menor para telas pequenas */
   
   .time-box small { font-size: 0.7rem; }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 60%;
+    margin: 1rem;
+  }
+
+  .site-button {
+    margin: 1rem;
+  }
 }
 
 /* 4. MODO PAISAGEM (LANDSCAPE) */
@@ -234,4 +259,16 @@ body, html {
   .time-box small { font-size: 0.6rem; }
   .buttons { flex-direction: row; margin-top: 10px; }
   .site-button, .trailer-button { padding: 8px 15px; font-size: 0.8rem; width: auto; }
+
+    .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 60%;
+    margin: 1rem;
+  }
+
+  .site-button {
+    margin: 1rem;
+  }
 }

@@ -1,4 +1,4 @@
-// File: C:\Users\ANDER\Documents\Tudo em programação\aleatórios\bfcounter\app\layout.tsx
+// File: C:\Users\ANDER\Documents\programação\aleatórios\bfcounter\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
