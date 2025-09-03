@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+.sobre{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.titulo-modo-principal{
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;  
+}
+
+.modos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.descricao-modo {
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #0000008f;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.modoDeJogo{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 60rem;
+    height: 70rem;
+}
+
+.titulo-modo{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5.5rem;
+}
+
+.modo01 {
+  background-image: url('/imagem/img001.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
+  padding: 1rem;
+  border-radius: 10px;  
+  background-color: rgba(0, 0, 0, 0.5); 
+  background-blend-mode: multiply;       
+}
+
+.modo02 {
+  background-image: url('/imagem/img002.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  background-blend-mode: multiply;       
+}
+
+.modo03 {
+  background-image: url('/imagem/img003.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  background-blend-mode: multiply;      
+}
+
+.modo01,
+.modo02,
+.modo03 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  background-blend-mode: multiply;   
+  transition: all 0.4s ease; /* animação suave */
+  cursor: pointer; /* indica interatividade */
+}
+
+/* Efeito ao passar o mouse */
+.modo01:hover,
+.modo02:hover,
+.modo03:hover {
+  background-color: transparent; /* remove opacidade */
+  transform: scale(1.05); /* aproxima (zoom leve) */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6); /* destaca */
+  z-index: 5; /* garante que fique acima dos outros */
+}
+
+
+.titulo-modo-principal, .titulo-modo{
+  color: #fff;
+}

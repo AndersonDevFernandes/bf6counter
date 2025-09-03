@@ -14,12 +14,13 @@ html {
 
 .container {
   position: relative;
-  height: 100vh;
+  min-height: 100vh; /* Alterado de height: 100vh para min-height */
   width: 100%;
   overflow: hidden;
   display: flex;
+  flex-direction: column; /* Garante layout em coluna */
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Alinha ao topo */
 }
 
 /* ==========================================================================
@@ -86,9 +87,8 @@ html {
 }
 
 .content {
-  position: absolute;
+  /* Removido: position: absolute; */
   z-index: 1;
-  height: 60%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -98,7 +98,21 @@ html {
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
-  padding: 20px;
+  padding: 40px 20px 40px 20px; /* Mais espaço para separar do próximo bloco */
+  box-sizing: border-box;
+  margin-top: 100px; /* Espaço para o header fixo */
+}
+
+/* Garante espaçamento entre as seções */
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+  z-index: 2;
+  position: relative;
+  background: rgba(0,0,0,0.7);
+  border-radius: 16px;
+  padding: 40px 20px;
   box-sizing: border-box;
 }
 
@@ -205,8 +219,13 @@ html {
     gap: 1rem;
     padding: 1rem;
   }
+  .container {
+    min-height: 100vh;
+    padding-bottom: 0;
+  }
   .content {
-    padding: 15px;
+    margin-top: 80px;
+    padding: 20px 8px;
     height: auto;
     min-height: 60vh;
   }
