@@ -48,8 +48,6 @@
 /*!****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/components/Sobre/Sobre.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************/
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -72,9 +70,10 @@
 
 .modos{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 .descricao-modo {
@@ -83,7 +82,9 @@
   background-color: #0000008f;
   padding: 1rem;
   border-radius: 5px;
+  margin-top: 20rem;
 }
+
 
 .modoDeJogo{
     display: flex;
@@ -96,7 +97,16 @@
 .titulo-modo{
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 5.5rem;
+  margin-bottom: 15.5rem;
+  margin-top: 5rem;
+  background-color: #0000008c;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0.5rem;
+  
+  
 }
 
 .modo01 {
@@ -163,5 +173,42 @@
 
 .titulo-modo-principal, .titulo-modo{
   color: #fff;
+}
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 1024px) {
+  .modoDeJogo {
+    flex-direction: column;   /* muda row para column */
+    width: 100%;              /* ocupa largura total */
+    height: auto;             /* ajusta altura */
+  }
+
+  .modos {
+    width: 100%;              /* ocupa toda a largura */
+    min-height: 20rem;        /* altura mínima para não ficar achatado */
+  }
+}
+
+@media (max-width: 768px) {
+  .modos {
+    background-image: none !important; /* remove imagens */
+    background-color: #ff6600 !important; /* fundo laranja */
+    border-radius: 0;            /* remove bordas arredondadas (opcional) */
+  }
+
+  .titulo-modo {
+    margin: 1rem 0;             /* espaçamento menor no mobile */
+    position: relative;         /* solta do absolute para não sobrepor */
+  }
+
+  .descricao-modo {
+    margin-top: 1rem;           /* ajusta espaço entre título e descrição */
+    font-size: 1rem;            /* fonte menor para caber bem */
+  }
+
+  .titulo-modo-principal {
+    font-size: 2rem;            /* reduz título principal */
+    text-align: center;
+  }
 }
 
