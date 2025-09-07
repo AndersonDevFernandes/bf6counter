@@ -13,6 +13,7 @@ html {
   padding: 0;
   height: 100%;
   font-family: "Oswald", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .container {

@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       {/* Container principal com vídeo de fundo */}
-      <main className="container">
+      <main className="container" id="home">
         <video autoPlay loop muted playsInline className="background-video">
           <source src={optimizedVideoUrl} type="video/mp4" />
           Seu navegador não suporta vídeo de background.
@@ -56,10 +56,10 @@ export default function Home() {
       </main>
 
       {/* Agora as seções ficam FORA do container */}
-      <div>
+      <div id="about">
         <Sobre />
       </div>
-      <div>
+      <div id="contact">
         <Contato />
       </div>
     </>
