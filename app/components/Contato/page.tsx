@@ -2,6 +2,8 @@
 
 import "./Contato.css"
 
+import Image from "next/image"
+
 export default function Contato() {
   return (
     <footer>
@@ -13,10 +15,10 @@ export default function Contato() {
       </div>
       <div>
         <a href="https://github.com/AndersonDevFernandes" target="_blank" rel="noopener noreferrer">
-          <img src="/imagem/github.png" alt="github" className="social-icon" />
+          <Image src="/imagem/github.png" alt="github" className="social-icon" />
         </a>
         <a href="https://www.linkedin.com/in/anderson-fernandes-da-silva-12aa6932/" target="_blank" rel="noopener noreferrer">
-          <img src="/imagem/linkedin.png" alt="linkedin" className="social-icon" />
+          <Image src="/imagem/linkedin.png" alt="linkedin" className="social-icon" />
         </a>
       </div>
     </footer>
