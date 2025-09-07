@@ -45,6 +45,41 @@
   font-size: 2rem;
 }
 
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/components/Contato/Contato.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #000000ad;
+    margin-top: 5rem;
+}
+
+.contato-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.footer-text{
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0.2rem;
+}
+
+.social-icon{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
 /*!****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/components/Sobre/Sobre.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************/

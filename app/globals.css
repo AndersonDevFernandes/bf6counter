@@ -100,7 +100,7 @@ html {
   backdrop-filter: blur(5px);
   padding: 40px 20px 40px 20px; /* Mais espaço para separar do próximo bloco */
   box-sizing: border-box;
-  margin-top: 100px; /* Espaço para o header fixo */
+  margin-top: 13rem; /* Espaço para o header fixo */
 }
 
 /* Garante espaçamento entre as seções */
