@@ -15,10 +15,10 @@ export default function Contato() {
       </div>
       <div>
         <a href="https://github.com/AndersonDevFernandes" target="_blank" rel="noopener noreferrer">
-          <Image src="/imagem/github.png" alt="github" className="social-icon" />
+          <Image src="/imagem/github.png" alt="github" className="social-icon" width={24} height={24}/>
         </a>
         <a href="https://www.linkedin.com/in/anderson-fernandes-da-silva-12aa6932/" target="_blank" rel="noopener noreferrer">
-          <Image src="/imagem/linkedin.png" alt="linkedin" className="social-icon" />
+          <Image src="/imagem/linkedin.png" alt="linkedin" className="social-icon" width={24} height={24}/>
         </a>
       </div>
     </footer>

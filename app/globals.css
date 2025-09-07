@@ -128,7 +128,7 @@ section {
 
 .site-button,
 .trailer-button {
-  padding: 10px 20px;
+  padding: 0.8rem 1.2rem;
   font-size: 1rem;
   border: 1px #fff solid;
   background: #ff6600;
@@ -139,6 +139,7 @@ section {
   margin: 2rem;
   font-family: "Oswald", sans-serif;
   letter-spacing: 0.2rem;
+  
 }
 
 .site-button:hover {
@@ -317,13 +318,25 @@ section {
     font-size: 0.7rem;
   }
 
-  .buttons {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    width: 60%;
-    margin: 1rem;
-  }
+.buttons {
+  flex-direction: column;
+  align-items: center;
+  gap: 0; /* desliga o gap */
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.site-button,
+.trailer-button {
+  width: 80%;
+  max-width: 300px;
+  margin-bottom: 1rem;
+}
+
+.buttons > :last-child {
+  margin-bottom: 0; /* evita espaço extra no último botão */
+}
+
 
   .site-button {
     margin: 1rem;
@@ -368,24 +381,26 @@ section {
   .time-box small {
     font-size: 0.6rem;
   }
-  .buttons {
-    flex-direction: row;
-    margin-top: 10px;
-  }
-  .site-button,
-  .trailer-button {
-    padding: 8px 15px;
-    font-size: 0.8rem;
-    width: auto;
-  }
 
-  .buttons {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    width: 60%;
-    margin: 1rem;
-  }
+.buttons {
+  flex-direction: column;
+  align-items: center;
+  gap: 0; /* desliga o gap */
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.site-button,
+.trailer-button {
+  width: 80%;
+  max-width: 300px;
+  margin-bottom: 1rem;
+}
+
+.buttons > :last-child {
+  margin-bottom: 0; /* evita espaço extra no último botão */
+}
+
 
   .site-button {
     margin: 1rem;

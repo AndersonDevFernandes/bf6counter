@@ -48,36 +48,84 @@
 /*!********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/components/Contato/Contato.css ***!
   \********************************************************************************************************************************************************************************************************************************************************************************/
-footer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 20px;
-    background-color: #000000ad;
-    margin-top: 5rem;
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #000000ad;
+  margin-top: 5rem;
 }
 
-.contato-container{
-    display: flex;
+.contato-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.footer-text {
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0.2rem;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+/* ========================= */
+/* RESPONSIVIDADE */
+/* ========================= */
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  footer {
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 0.3rem;
-}
-
-.footer-text{
-    color: white;
-    font-size: 1.3rem;
     text-align: center;
-    margin: 0.2rem;
+    padding: 15px;
+  }
+
+  .contato-container {
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .footer-text {
+    font-size: 1.1rem;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+    margin: 0 8px;
+  }
 }
 
-.social-icon{
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
-    transition: transform 0.3s;
+/* Celulares (até 600px) */
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 10px;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+  }
+
+  .social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+  }
 }
 
 /*!****************************************************************************************************************************************************************************************************************************************************************************!*\

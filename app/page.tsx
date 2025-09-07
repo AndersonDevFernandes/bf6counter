@@ -42,8 +42,14 @@ export default function Home() {
             <a
               href="https://www.youtube.com/watch?v=fBKcXfOxy7o&t=1s"
               target="_blank"
-            >
-              <button className="trailer-button">TRAILER ▶</button>
+            >              
+              <button className="trailer-button">TRAILER 1 ▶</button>
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=nMBBXqu0OLE"
+              target="_blank"
+            >              
+              <button className="trailer-button">TRAILER 2 ▶</button>
             </a>
           </div>
         </div>
