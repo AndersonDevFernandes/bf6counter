@@ -13,7 +13,7 @@ export default function Countdown() {
 
   useEffect(() => {
     // Data final: 10 de outubro de 2025 às 15:00
-    const targetDate = new Date("2025-10-10T15:00:00");
+    const targetDate = new Date("2025-10-10T12:00:00");
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
